@@ -1,0 +1,14 @@
+﻿@model IEnumerable<TestDbFirst01MVC.DAL.Department>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Departments</h2>
+
+<ul>
+    @foreach (var department in Model)
+    {
+    <li>@department.DepartmentID, @department.Name, @department.GroupName</li>
+    }
+</ul>
